@@ -1,0 +1,1318 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6">
+        <rdfs:comment>Domaine : Voiliers</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aDirectionVent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aDirectionVent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aOrientation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aOrientation">
+        <rdfs:comment>A est disposé d&apos;une certaine manière B</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Orientation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aPourAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aPourAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aPourCategorie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aPourCategorie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aPourForme -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aPourForme">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Forme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aTaille -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aTaille"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aTailleVoilier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aTailleVoilier">
+        <rdfs:comment>A a pour taille de voilier B</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aTaille"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#entoure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#entoure">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#entoureVoile -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#entoureVoile">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Espar"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#entoure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estAttacheA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estAttacheA">
+        <rdfs:comment>A est attaché à B</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Composant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Composant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estBarrePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estBarrePar">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Personne"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Composant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estMaintenu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estMaintenu">
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#maintient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estOriente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estOriente">
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#oriente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estPlusGrand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estPlusGrand"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estRetractable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estRetractable">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Aileron"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estSitue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estSitue">
+        <rdfs:comment>A est situé à/au B</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#IndicationSpatiale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#maintient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#maintient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#maintientMat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#maintientMat">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Mat"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#maintient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#maintientVoile -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#maintientVoile">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#maintient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#oriente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#oriente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#orienteGouvernail -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#orienteGouvernail">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Gouvernail"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#oriente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#orienteVoile -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#orienteVoile">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#oriente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#participe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#participe">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Activite"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#peutTransporter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#peutTransporter">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Personne"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#TailleExacte -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#TailleExacte">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Activite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Activite">
+        <rdfs:comment>Ensemble des manifestation d’une faculté d’agir ou d’un phénomène</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Aileron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Aileron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Composant"/>
+        <rdfs:comment>Pièce immergée permettant de réduire la dérive du voilier</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Ancre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Ancre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Composant"/>
+        <rdfs:comment>Lourde pièce en acier prenant appui sur le fond, elle permet de maintenir un engin flottant de se maintenir en place</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Arriere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Arriere">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#IndicationSpatiale"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Avant"/>
+        <rdfs:comment>Qui est placé à l’arrière</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Avant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Avant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#IndicationSpatiale"/>
+        <rdfs:comment>Qui est placé à l’avant</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Barre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Barre">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Gouverne"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aPourForme"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Cercle"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Cylindre"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#oriente"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Gouvernail"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Gouverne"/>
+        <rdfs:comment>En forme de cylindre ou de cercle, oriente le gouvernail</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Bome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Bome">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Espar"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#maintientVoile"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#GrandVoile"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#orienteVoile"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#GrandVoile"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aOrientation"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Horizontal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Espar"/>
+        <rdfs:comment>Espar horizontal qui permet de maintenir et d&apos;orienter la grand-voile d&apos;un voilier</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Catamaran -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Catamaran">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMulticoque"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Coque"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMulticoque"/>
+        <rdfs:comment>Voilier qui se compose de deux coques</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieConception"/>
+        <rdfs:comment>Catégorie pour la navigation en « haute mer »
+Pour de grands voyages où le vent peut dépasser la force 8 (sur l’échelle de Beaufort) et les vagues une hauteur significative de 4 m et pour lesquels ces bateaux sont, dans une large mesure, autosuffisants.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieConception"/>
+        <rdfs:comment>Catégorie pour la navigation « au large »
+Pour des voyages au large des côtes au cours desquels les vents peuvent aller jusqu’à la force 8 comprise et les vagues peuvent atteindre une hauteur significative jusqu’à 4 m compris.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieConception"/>
+        <rdfs:comment>Catégorie pour la navigation « à proximité des côtes »
+Conçus pour des voyages à proximité des côtes et dans de grandes baies, de grands estuaires, lacs et rivières, au cours desquels les vents peuvent aller jusqu’à la force 6 comprise et les vagues peuvent atteindre une hauteur significative jusqu’à 2 m compris.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieConception -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieConception">
+        <rdfs:comment>Catégorie qui définit pour les bateaux des limites, en terme de capacité de navigation, qui tient compte des caractéristiques techniques du navire, ainsi que de son aptitude à affronter la mer et le vent</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieConception"/>
+        <rdfs:comment>Catégorie pour la navigation en « en eaux protégées »
+Conçus pour des voyages dans des eaux côtières protégées, des baies de petite dimension, des petits lacs, rivières et canaux, au cours desquels le vent peut atteindre la force 4 et les vagues une hauteur significative jusqu’à 0,3 mètre, avec des vagues occasionnelles, causées par exemple par des bateaux de passage, d&apos;une hauteur maximale de 0,5 mètre</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Centre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Centre">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#IndicationSpatiale"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Arriere"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Avant"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#IndicationSpatiale"/>
+        <rdfs:comment>Milieu d’un espace quelconque</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Cercle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Cercle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Forme"/>
+        <rdfs:comment>Courbe plane fermée dont tous les points sont à égale distance d&apos;un point intérieur appelé centre</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CerfVolant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CerfVolant">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estAttacheA"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Mat"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile"/>
+        <rdfs:comment>Voile du Kite-Boat non attachée à un mât</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Composant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Composant">
+        <rdfs:comment>Objet qui entre dans la composition de quelque chose</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Coque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Coque">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Flotteur"/>
+        <rdfs:comment>Infrastructure assurant la flottaison et supportant les superstructures (pont, mât, etc..)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Cylindre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Cylindre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Forme"/>
+        <rdfs:comment>Surface, réunion de toutes les droites ayant même direction et coupant une courbe donnée.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#DemiCercle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#DemiCercle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Forme"/>
+        <rdfs:comment>Moitié d’un cercle</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Derive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Derive">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Aileron"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estRetractable"/>
+                        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estAttacheA"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Coque"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estSitue"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Centre"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Aileron"/>
+        <rdfs:comment>Aileron fixé au centre de la coque pouvant être rétractable</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Deriveur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Deriveur">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMonocoque"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:onClass>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estRetractable"/>
+                                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Derive"/>
+                            </owl:Restriction>
+                        </owl:onClass>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMonocoque"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Quillard"/>
+        <rdfs:comment>Voilier monocoque dont la dérive est rétractable</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Enfant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Enfant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Personne"/>
+        <rdfs:comment>Personne de moins de 15 ans</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Espar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Espar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Composant"/>
+        <rdfs:comment>Elément de gréement long et rigide</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Flotteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Flotteur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Composant"/>
+        <rdfs:comment>Corps, dispositif, pièce spécialement conçus pour flotter à la surface d’un liquide</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Foc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Foc">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aPourForme"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Triangle"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estSitue"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Avant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile"/>
+        <rdfs:comment>Voile triangulaire à l’avant d’un voilier</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Forme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Forme">
+        <rdfs:comment>Organisation des contours d’un objet; structure, configuration</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Gouvernail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Gouvernail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Gouverne"/>
+        <rdfs:comment>Appareil mobile destiné à la manoeuvre et à la conduite des bateaux</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Gouverne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Gouverne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Composant"/>
+        <rdfs:comment>Ensemble des éléments de direction permettant de diriger un navire</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#GrandMat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#GrandMat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Mat"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estPlusGrand"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Mat"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#maintientVoile"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#GrandVoile"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Mat"/>
+        <rdfs:comment>Le plus grand des mâts d&apos;un navire, maintient la grand-voile</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#GrandVoile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#GrandVoile">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estPlusGrand"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estMaintenu"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#GrandMat"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estOriente"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Bome"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile"/>
+        <rdfs:comment>Voile la plus grande du plus grand mât</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#GrosVoilier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#GrosVoilier">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aTailleVoilier"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Metre"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">30</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+        <rdfs:comment>Voilier de plus de 30mètres.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Horizontal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Horizontal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Orientation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Vertical"/>
+        <rdfs:comment>Qui est parallèle à la ligne d’horizon</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#IndicationSpatiale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#IndicationSpatiale">
+        <rdfs:comment>Indication relative à l’espace physique</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#KiteBoat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#KiteBoat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierSansMat"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CerfVolant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierSansMat"/>
+        <rdfs:comment>Bateau conçu pour être tracté par un cerf-volant</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Lest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Lest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Composant"/>
+        <rdfs:comment>Matière pesante placée dans les fonds d&apos;un navire ou fixée à sa quille pour lui assurer un tirant d&apos;eau ou une stabilité convenables</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Mat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Mat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Espar"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aOrientation"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Vertical"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#maintientVoile"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Espar"/>
+        <rdfs:comment>Espar vertical servant à maintenir une voile</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Metre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Metre">
+        <rdfs:comment>Unité de base de longeur du système international.
+Il est défini par la distance parcourue par la lumière dans le vide en 1/299 792 458 seconde.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#MoyenVoilier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#MoyenVoilier">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aTailleVoilier"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Metre"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">10</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aTailleVoilier"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Metre"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">30</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+        <rdfs:comment>Voilier qui fait plus de 10 mètres et moins de 30 mètres.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Optimist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Optimist">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Solitaire"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#participe"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Regate"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#peutTransporter"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Enfant"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aPourCategorie"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieA"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estBarrePar"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Enfant"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Lest"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#PetitVoilier"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Solitaire"/>
+        <rdfs:comment>Petit dériveur ne possédant pas de lest, participant à des régates, et ne pouvant transporter qu&apos;une personne de moins de 15 ans</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Orientation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Orientation">
+        <rdfs:comment>Manière dont quelque chose est disposé par rapport à quelque chose</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Personne">
+        <rdfs:comment>Etre humain</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#PetitVoilier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#PetitVoilier">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aTailleVoilier"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Metre"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">10</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+        <rdfs:comment>Voilier qui fait moins de 10 mètres</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#PlancheAVoile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#PlancheAVoile">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierAvecMat"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Aileron"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aPourCategorie"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieA"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Flotteur"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Wishbone"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Coque"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#PetitVoilier"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierAvecMat"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMonocoque"/>
+        <rdfs:comment>Voilier avec mât avec un wishbone</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Quillard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Quillard">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMonocoque"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Quille"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMonocoque"/>
+        <rdfs:comment>Voilier monocoque possédant une quille</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Quille -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Quille">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Composant"/>
+        <rdfs:comment>Appendice situé sous la coque d&apos;un voilier, elle évite au bateau de chavirer et l’aide à maintenir son cap</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Regate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Regate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Activite"/>
+        <rdfs:comment>Course de vitesse entre plusieurs bateaux sur un parcours fermé</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Solitaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Solitaire">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Deriveur"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estBarrePar"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Personne"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Deriveur"/>
+        <rdfs:comment>Voilier dériveur barré par une seule personne</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Spinnaker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Spinnaker">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aDirectionVent"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Arriere"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estSitue"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Avant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile"/>
+        <rdfs:comment>Voile hissée à l&apos;avant d&apos;un voilier lorsque le vent souffle depuis l&apos;arrière du navire</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Triangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Triangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Forme"/>
+        <rdfs:comment>Polygone à trois côtés</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Trimaran -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Trimaran">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMulticoque"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Coque"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Flotteur"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMulticoque"/>
+        <rdfs:comment>Voilier composé de deux flotteurs reliés à une coque</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Vertical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Vertical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Orientation"/>
+        <rdfs:comment>Qui est perpendiculaire à l’horizontal</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Composant"/>
+        <rdfs:comment>Pièce de tissu servant a propulser un véhicule grâce à l’action du vent</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier">
+        <rdfs:comment>Embarcation possédant une voile</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierAvecMat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierAvecMat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Mat"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierSansMat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMonocoque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMonocoque">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Flotteur"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierAvecMat"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMulticoque"/>
+        <rdfs:comment>Voilier qui ne possède qu&apos;une seule coque</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMulticoque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMulticoque">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Flotteur"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierAvecMat"/>
+        <rdfs:comment>Voilier qui possède au moins deux flotteurs</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierSansMat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierSansMat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Mat"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:maxQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voilier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Wishbone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Wishbone">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Espar"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aOrientation"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Horizontal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aPourForme"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#DemiCercle"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#entoureVoile"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#orienteVoile"/>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Voile"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Espar"/>
+        <rdfs:comment>Espar horizontal en forme de demi-cercle entourant et permettant d’orienter une voile</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Dragon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Dragon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#PetitVoilier"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Quillard"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#VoilierMonocoque"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#participe"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Regate"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdf:type>
+        <TailleExacte rdf:datatype="&xsd;integer">8</TailleExacte>
+        <rdfs:comment>Le Dragon est un type de voilier, à gréement de sloop et à quille qui a été série olympique et conserve encore un grand nombre de passionnés ; il est souvent surnommé le voilier des rois ou le roi des voiliers. Il est comparable au Requin.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Jeux_Olympiques -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Jeux_Olympiques">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Regate"/>
+        <rdfs:comment>Les Jeux Olympiques sont un événement international majeur, regroupant les sports d’été et d’hiver, auquel des milliers d’athlètes participent.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Mousquetaire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Mousquetaire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Deriveur"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#PetitVoilier"/>
+        <TailleExacte rdf:datatype="&xsd;integer">6</TailleExacte>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Tornado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Tornado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Catamaran"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#PetitVoilier"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Foc"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Spinnaker"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#estComposeDe"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Bome"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#aPourCategorie"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#CategorieD"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#participe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thur/ontologies/2016/4/untitled-ontology-6#Regate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <TailleExacte rdf:datatype="&xsd;integer">6</TailleExacte>
+        <rdfs:comment>Long de 6,09 m et large de 3,05 m, le Tornado est une machine particulièrement rapide sur un parcours olympique. Composé d&apos;une grand-voile entièrement lattée avec bôme, foc et spi, sa voilure représente une superficie totale de 49 mètres carrés.</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
